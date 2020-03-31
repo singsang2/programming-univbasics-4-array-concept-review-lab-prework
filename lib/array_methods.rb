@@ -16,8 +16,8 @@ end
 
 def find_min_value(array)
   min |= array[0]
-  pry
   (1...array.length).each do |index|
+    binding.pry
     min = array[index] if min > array[index]
   end
   min
